@@ -1,0 +1,50 @@
+.header {
+  width: 100%;
+  .header_top {
+    height: 28px;
+    background-color: #545652;
+    display: flex;
+    align-items: center;
+    .content {
+      flex: 1;
+      display: flex;
+      gap: 10px;
+      padding-left: 15px;
+      align-items: center;
+      font-size: 14px;
+      color: #d5d5d5;
+      .content_item {
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    .account {
+      margin-right: 15px;
+      color: #d5d5d5;
+      font-size: 12px;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .header_content {
+    padding: 10px 30px;
+    background-color: #f0f3f5;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    .website_name {
+      font-size: 25px;
+      font-weight: 700;
+      color: #268DCD;
+    }
+    .search {
+      flex: 1;
+      padding-right: 40px;
+    }
+  }
+}
+

@@ -1,0 +1,17 @@
+.star_container {
+  display: inline-block;
+  .no_score {
+    font-size: 12px;
+    color: #111111;
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    // padding-left: 12px;
+    .score {
+      margin-left: 5px;
+      font-size: 12px;
+    }
+  }
+}

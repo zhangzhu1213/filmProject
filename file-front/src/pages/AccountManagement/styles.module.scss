@@ -1,0 +1,69 @@
+.account_setting_container {
+ 
+  .content {
+    .banner {
+      padding: 22px 20px 20px;
+      background-color: #edf4ed;
+      color: #007722;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .setting {
+      width: 500px;
+      margin-top: 20px;
+      margin-left: 40px;
+      display: flex;
+      flex-direction: column;
+      // gap: 20px;
+      font-size: 16px;
+      color: #333333;
+      .avatar {
+        height: 80px;
+        align-items: center;
+        display: flex;
+        gap: 30px;
+        border-bottom: 1px solid #eaeaea;
+      }
+      .account {
+        height: 80px;
+        align-items: center;
+        display: flex;
+        gap: 30px;
+        border-bottom: 1px solid #eaeaea;
+      }
+      .nickname {
+        height: 80px;
+        align-items: center;
+        display: flex;
+        gap: 30px;
+        border-bottom: 1px solid #eaeaea;
+        .nickname_update {
+          color: #3577A9;
+          cursor: pointer;
+        }
+      }
+      .password {
+        height: 80px;
+        align-items: center;
+        display: flex;
+        gap: 30px;
+        border-bottom: 1px solid #eaeaea;
+        .password_update {
+          color: #3577A9;
+          cursor: pointer;
+        }
+      }
+      .base {
+        height: 80px;
+        align-items: center;
+        display: flex;
+        gap: 30px;
+        border-bottom: 1px solid #eaeaea;
+        .base_update {
+          color: #3577A9;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

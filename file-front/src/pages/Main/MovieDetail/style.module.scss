@@ -1,0 +1,313 @@
+.movie_detail_container {
+  width: 700px;
+    margin: auto;
+    background-color: #eef3f7;
+    padding: 10px 20px;
+  // height: 1000px;
+  // background-color: pink;
+  h2 {
+    .movie_name {
+      font-weight: 700;
+    }
+    .movie_year {
+      font-weight: 700;
+      color: #888888;
+    }
+  }
+  .content {
+    height: 100%;
+    // background-color: skyblue;
+    .movie_introduction {
+      // height: 300px;
+      // background-color: #fff;
+      margin-bottom: 30px;
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .left {
+          display: flex;
+          gap: 10px;
+          border-radius: 1px solid #eaeaea;
+          .poster {
+            width: 200px;
+            height: 300px;
+            overflow: hidden;
+            // background-color: pink;
+            img {
+              width: 100%;
+              // height: 100%;
+              // width: 135px;
+              // height: 202px;
+            }
+          }
+          .detail {
+            .detail_item {
+              margin-bottom: 10px;
+              font-size: 16px;
+              line-height: 20px;
+              .title {
+                color: #666666;
+                margin-right: 5px;
+              }
+              .item_content {
+                color: #111111;
+              }
+            }
+          }
+        }
+        // .right {
+        // }
+      }
+      .judge {
+        display: flex;
+        gap: 10px;
+        font-size: 13px;
+        margin-top: 20px;
+      }
+      .look {
+        margin: 10px 0;
+        // font-size: 15px;
+        color: #111111;
+        .look_item {
+          font-size: 12px;
+          // width: 42px;
+          // height: 26px;
+          padding: 5px 10px;
+          border-radius: 3px;
+          background-color: #f9d49d;
+          cursor: pointer;
+          margin-right: 12px;
+        }
+      }
+      .unlook {
+        margin: 15px 0;
+        font-size: 12px;
+        .unlook_delete {
+          color: #bbb;
+          cursor: pointer;
+          &:hover {
+            color: #fff;
+            background-color: #bbb;
+          }
+        }
+      }
+      .undo {
+        margin-top: 10px;
+        // display: flex;
+        // gap: 10px;
+        font-size: 13px;
+        .edit {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          margin-bottom: 10px;
+          .icon_item {
+            cursor: pointer;
+          }
+          .operate_item {
+            font-size: 13px;
+            cursor: pointer;
+            color: #3377aa;
+            &:hover {
+              background-color: rgb(135, 194, 239);
+              cursor: pointer;
+            }
+          }
+        }
+        .my_comment {
+          margin-top: 20px;
+          .title {
+            font-size: 16px;
+            color: #111111;
+          }
+          header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            .comment_title {
+              flex: 1;
+              align-items: center;
+              text-align: center;
+              // font-size: px;
+              color: black;
+              font-weight: 500;
+            }
+            .comment_edit {
+              display: flex;
+              gap: 12px;
+              .edit_item_update {
+                color: #3377aa;
+                cursor: pointer;
+                &:hover {
+                  color: #fff;
+                  background-color: #3377aa;
+                }
+              }
+              .edit_item_delete {
+                color: #bbb;
+                cursor: pointer;
+                &:hover {
+                  color: #fff;
+                  background-color: #bbb;
+                }
+              }
+            }
+          }
+        }
+        .comment {
+          color: #3377aa;
+          &:hover {
+            background-color: rgb(135, 194, 239);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .movie_plot {
+      border-top: 1px solid #ddd;
+      // margin-bottom: 30px;
+      .title {
+        margin-top: 30px;
+        font-size: 16px;
+        color: #007722;
+        margin-bottom: 10px;
+      }
+      .content {
+        line-height: 20px;
+        margin-bottom: 30px;
+        font-size: 13px;
+        color: #111111;
+      }
+    }
+    .movie_actors {
+      border-top: 1px solid #ddd;
+      margin-bottom: 30px;
+      .title {
+        margin-top: 30px;
+        font-size: 16px;
+        color: #007722;
+        margin-bottom: 15px;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: repeat(6, 95px);
+        gap: 21px;
+        .actor_item {
+          // height: 182px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          // background-color: pink;
+          .img {
+            width: 95px;
+            height: 133px;
+            overflow: hidden;
+            // background-color: skyblue;
+            img {
+              width: 95px;
+              height: 133px;
+            }
+          }
+          .item_name {
+            font-size: 13px;
+            color: #111111;
+            width: 95px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-align: center;
+          }
+          .item_role {
+            font-size: 13px;
+            color: #9b9b9b;
+          }
+        }
+      }
+    }
+    .movie_comment {
+      border-top: 1px solid #ddd;
+      .title {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        font-size: 16px;
+        color: #007722;
+        margin-bottom: 15px;
+        .name {
+          flex: 1;
+        }
+        .comment_edit {
+          padding: 7px 12px;
+          background-color: #fae9da;
+          font-size: 13px;
+          color: #ca6445;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+      }
+      .content {
+        .comment_item {
+          // height: 80px;
+          padding: 14px 0px;
+          border-top: 1px solid #ddd;
+          // background-color: skyblue;
+          header {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: #aaaaaa;
+            .user {
+              margin-right: 5px;
+              color: #494949;
+            }
+            .score {
+              margin-right: 5px;
+              color: #494949;
+            }
+            .time {
+              margin-right: 5px;
+            }
+            .position {
+              margin-right: 5px;
+            }
+            .empty {
+              flex: 1;
+            }
+            .use {
+              color: #494949;
+              .comment_use {
+                margin-left: 5px;
+                color: #3377aa;
+                &:hover {
+                  background-color: rgb(135, 194, 239);
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          .comment_item_content {
+            line-height: 20px;
+            font-size: 13px;
+            color: #666666;
+          }
+        }
+      }
+    }
+    .movie_more {
+      background-color: #e9eff5;
+      color: #225d99;
+      font-size: 12px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      margin-top: 30px;
+      cursor: pointer;
+      &:hover {
+        background-color: #e3ecf6;
+      }
+    }
+  }
+}

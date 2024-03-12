@@ -1,0 +1,88 @@
+.user_home {
+  .content {
+    .banner {
+      padding: 22px 20px 20px;
+      background-color: #edf4ed;
+      color: #007722;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .body {
+      width: 800px;
+      margin-top: 30px;
+      margin: 30px auto;
+      // height: 800px;
+      background-color: rgb(231 240 247);
+      border: 1px solid rgb(207 231 250);
+      border-radius: 5px;
+      .img {
+        width: 800px;
+        height: 50px;
+      }
+      .self_introduction {
+        margin: 20px 30px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #fff;
+        .title {
+          // margin: 0 15px;
+          color: #007722;
+        }
+        .self_info {
+          margin-top: 15px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          font-size: 13px;
+        }
+      }
+      .self_comment {
+        margin: 20px 30px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #fff;
+        .title {
+          // margin: 0 15px;
+          color: #007722;
+          margin-bottom: 10px;
+        }
+        .self_comment_content {
+          .comment_item {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+            .left {
+              width: 105px;
+              height: 141px;
+              overflow: hidden;
+              cursor: pointer;
+              img {
+                width: 105px;
+                height: 141px;
+              }
+            }
+            .right {
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              font-size: 13px;
+              color: #666666;
+              .tag {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+              }
+              .comment {
+                flex: 1;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

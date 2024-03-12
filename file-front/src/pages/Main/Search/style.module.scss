@@ -1,0 +1,82 @@
+.search_container {
+  height: 1000px;
+  // background-color: pink;
+  width: 700px;
+  margin-left: 170px;
+  font-size: 25px;
+  color: #494949;
+  header {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0 30px;
+    padding: 0;
+    color: #494949;
+    .title {
+      margin-right: 10px;
+    }
+    .keyword {
+
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .movie_list_item {
+      display: flex;
+      gap: 15px;
+      cursor: pointer;
+      .img {
+        width: 80px;
+        height: 112px;
+        overflow: hidden;
+        // background-color: pink;
+        img {
+          width: 80px;
+          height: 112px;
+        }
+        
+      }
+      .item_content {
+        font-size: 12px;
+        // flex: 1;
+        // display: flex;
+        // flex-direction: column;
+        // gap: 10px;
+        .movie_name {
+          // display: inline-block;
+          font-size: 14px;
+          color: #3377AA;
+          margin-bottom: 15px;
+          .name {
+            &:hover {
+              color: white;
+              background-color: #3377AA;
+            }
+          }
+          
+        }
+        .movie_info {
+          font-size: 13px;
+        }
+        .movie_judge {
+          
+        }
+      }
+    }
+    .movie_more {
+      background-color: #E9EFF5;
+      color: #225D99;
+      font-size: 12px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      margin-top: 50px;
+      // margin-bottom: 30px;
+      cursor: pointer;
+      &:hover {
+        background-color: #e3ecf6;
+      }
+    }
+  }
+}
